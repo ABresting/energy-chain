@@ -4,11 +4,11 @@ The code is divided into two parts:
 1. Smart contract end to end PoC
 2. Smart Meter Data generation code for visualization
 
-#Smart contract end to end PoC:
+# Smart contract end to end PoC:
 
 Located in root directory /energy-chain/python-app
 
-##It has 3 main components:
+## It has 3 main components:
 
 1. Producer Node:
 
@@ -37,7 +37,7 @@ the major functionality of this component is to connect the producers and consum
 check_incoming_energy() - it crawls the pending requests from producers and consumers into making sure that the demand can be met. It checks if there is enough energy from producers that consumers can utilize.
 
 
-##Smart Contract
+## Smart Contract
 
 EnergyContract - Energy chain smart contract running over ethereum ganache blockchain.
 
