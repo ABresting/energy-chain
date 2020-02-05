@@ -33,6 +33,12 @@ contract EnergyContract {
 		release_counter += 1;
 	}
 
+	// fetches the traget producer address for energy transfer by Smart Meter
+	function outgoingRelease(address _address) public view returns(address){
+		matched_entry memory tmp = matching[_address];
+		return tmp._address;
+	}
+
 	// aggregator matching producer and consumer
 	function doMatching(int _value) public{
 	    request[pending_requests[request_counter-1]] -= _value;
